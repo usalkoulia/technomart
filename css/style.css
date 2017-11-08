@@ -1,0 +1,154 @@
+/*====================================================================================================================*\
+  БАЗОВЫЕ СТИЛИ
+\*====================================================================================================================*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+
+  background-color: #849d8f;
+  width: 1200px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.centering {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/*====================================================================================================================*\
+  ХЕДЕР
+\*====================================================================================================================*/
+
+.user-nav-list,
+.main-nav-list {
+  background-color: #293449;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Cuprum", sans-serif;
+}
+
+.user-nav-list-container {
+  display: flex;
+}
+
+.user-nav-link:not(.link-logo) {
+  padding: 12px 20px;
+}
+
+.user-nav-link svg {
+  margin-right: 10px;
+  vertical-align: middle;
+
+}
+
+.link-logo {
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+  text-transform: uppercase;
+  width: 220px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.link-order {
+background-color: #63a63e;
+}
+
+
+/*====================================================================================================================*\
+  FEATURES
+\*====================================================================================================================*/
+
+.features {
+  display: flex;
+}
+
+.features-item {
+  width: 300px;
+  height: 125px;
+}
+
+.item-materials {
+  background-color: #ffbf47;
+  background-image: url("../svg/svg-technomart/icon-1.svg");
+  background-repeat: no-repeat;
+  background-size: 45px 65px;
+  background-position: right center;
+}
+
+.item-instruments {
+  background-color: #3bbce3;
+  background-image: url("../svg/svg-technomart/icon-2.svg");
+  background-repeat: no-repeat;
+  background-size: 45px 65px;
+  background-position: right center;
+
+}
+.item-technique {
+  background-color: #dc91d8;
+  background-image: url("../svg/svg-technomart/icon-3.svg");
+  background-repeat: no-repeat;
+  background-size: 45px 65px;
+  background-position: right center;
+}
+
+.item-sale {
+  background-color: #8ed78f;
+  background-image: url("../svg/svg-technomart/icon-4.svg");
+  background-repeat: no-repeat;
+  background-size: 45px 65px;
+  background-position: right center;
+}
+
+.item-delivery {
+  background-color: #ffc047;
+  background-image: url("../svg/svg-technomart/icon-5.svg");
+  background-repeat: no-repeat;
+  background-size: 45px 65px;
+  background-position: right center;
+}
+
+
+
+.features-slider {
+  width: 620px;
+  height: 266px;
+}
+
+.features-slider-slide.slide-1 {
+  background-image: url("../img/slider-1-slide-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.features-slider-slide.slide-2 {
+  background-image: url("../img/slider-1-slide-2.jpg");
+  background-repeat: no-repeat;
+}
+
+
+/*====================================================================================================================*\
+  POPULAR
+\*====================================================================================================================*/
+
+.products-list,
+.producers-list {
+  display: flex;
+}
