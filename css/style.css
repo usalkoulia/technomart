@@ -9,7 +9,8 @@ body {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  /*font-family: "PT Sans", "Arial", sans-serif;*/
+  font-family: "Cuprum", sans-serif;
   color: #000000;
 
   background-color: #849d8f;
@@ -54,8 +55,12 @@ h2 {
   overflow: hidden;
 }
 
-.popular.popular-producers {
-  display: none;
+.main-link {
+  background-color: #ee3643;
+  font-size: 14px;
+  font-family: "Cuprum", sans-serif;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 /*====================================================================================================================*\
@@ -70,6 +75,7 @@ h2 {
 .obertka-s-serim-fonom {
   background-color: #f3f7f8;
   padding-bottom: 25px;
+  margin-bottom: 57px;
 }
 
 .user-nav-list,
@@ -80,7 +86,6 @@ h2 {
   justify-content: space-between;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Cuprum", sans-serif;
 }
 
 .user-nav-list-container {
@@ -103,19 +108,18 @@ h2 {
   text-transform: uppercase;
   width: 220px;
   text-align: center;
-  line-height: 45px;
+  line-height: 42px;
   font-size: 24px;
 }
 
 .link-order {
-background-color: #63a63e;
+  background-color: #63a63e;
 }
 
 .header-block {
-  font-family: "Cuprum", sans-serif;
   display: flex;
   justify-content: space-between;
-  padding-top: 45px;
+  padding-top: 48px;
 }
 
 .header-block-promo {
@@ -124,7 +128,7 @@ background-color: #63a63e;
   font-size: 16px;
   line-height: 23px;
   width: 200px;
-  margin-left: 50px;
+  margin-left: 52px;
 }
 
 .header-block-contacts {
@@ -135,12 +139,12 @@ background-color: #63a63e;
   font-size: 21px;
   color: #ee3643;
   border: 3px solid #ffffff;
-  padding: 8px;
-  padding-right: 45px;
+  padding: 7px 50px 7px 70px;
+  position: relative;
 }
 
 .header-block-contacts-number svg {
-  padding-right: 40px;
+  position: absolute;
 }
 
 .header-block-contacts-address {
@@ -166,8 +170,12 @@ background-color: #63a63e;
   padding: 10px 25px;
 }
 
+.item-enter {
+  margin-right: 10px;
+}
+
 .main-nav-list {
-  margin: 40px 0;
+  margin: 41px 0;
   padding: 19px;
   background-color: #32425c;
   box-shadow: 0 5px 0 0 #293449;
@@ -182,70 +190,143 @@ background-color: #63a63e;
 .features {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 33px;
 }
 
 .features-item {
   width: 300px;
   height: 123px;
+  color: #ffffff;
+  padding: 23px;
+  box-sizing: border-box;
+}
+
+.item-materials-1,
+.item-materials-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-materials-1 {
+  width: 620px;
+  flex-wrap: wrap;
+}
+
+.item-materials-2 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-materials-2 .features-item {
+  margin-bottom: 20px;
+}
+
+ .features-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+ }
+
+.features-item-link {
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 25px;
+  text-transform: uppercase;
+  width: 135px;
+  height: 38px;
 }
 
 .item-materials {
   background-color: #ffbf47;
   background-image: url("../svg/svg-technomart/icon-1.svg");
   background-repeat: no-repeat;
-  background-size: 45px 65px;
-  background-position: right center;
+  background-size: 65px 65px;
+  background-position: 202px 31px;
 }
 
 .item-instruments {
   background-color: #3bbce3;
   background-image: url("../svg/svg-technomart/icon-2.svg");
   background-repeat: no-repeat;
-  background-size: 45px 65px;
-  background-position: right center;
+  background-size: 73px 65px;
+  background-position: 198px 31px;
 
 }
 .item-technique {
   background-color: #dc91d8;
   background-image: url("../svg/svg-technomart/icon-3.svg");
   background-repeat: no-repeat;
-  background-size: 45px 65px;
-  background-position: right center;
+  background-size: 76px 66px;
+  background-position: 192px 29px;
 }
 
 .item-sale {
   background-color: #8ed78f;
   background-image: url("../svg/svg-technomart/icon-4.svg");
   background-repeat: no-repeat;
-  background-size: 45px 65px;
-  background-position: right center;
+  background-size: 74px 71px;
+  background-position: 189px 27px;
 }
 
 .item-delivery {
   background-color: #ffc047;
   background-image: url("../svg/svg-technomart/icon-5.svg");
   background-repeat: no-repeat;
-  background-size: 45px 65px;
-  background-position: right center;
+  background-size: 77px 69px;
+  background-position: 192px 29px;
 }
-
-
 
 .features-slider {
   width: 620px;
   height: 266px;
+  position: relative;
+}
+
+.features-slider-slide {
+  height: 266px;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 29px 25px;
+}
+
+.features-slider-slide-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.features-slider-slide-text {
+  font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .features-slider-slide.slide-1 {
   background-image: url("../img/slider-1-slide-1.jpg");
-  background-repeat: no-repeat;
 }
 
 .features-slider-slide.slide-2 {
   background-image: url("../img/slider-1-slide-2.jpg");
-  background-repeat: no-repeat;
+  display: none;
 }
 
+.features-slider-link {
+  position: absolute;
+  left: 25px;
+  bottom: 21px;
+  padding: 7px 48px;
+}
+
+.slide-buttons {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.features-slider {
+  position: relative;
+}
 
 /*====================================================================================================================*\
   POPULAR
@@ -260,13 +341,14 @@ background-color: #63a63e;
   display: flex;
   justify-content: space-between;
   background-color: #f9f5f0;
-  padding: 30px;
+  padding: 25px 26px 24px 27px;
+  align-items: center;
 }
 
-.popular-products-link {
-  background-color: #ee3643;
-  font-size: 14px;
-  font-family: "Cuprum", sans-serif;
-  text-transform: uppercase;
-  padding: 15px 55px;
+.popular.popular-producers {
+  display: none;
 }
+
+ .popular-link {
+  padding: 8px 54px;
+ }
