@@ -16,21 +16,21 @@
             <nav class="user-nav-list">
               <div class="user-nav-list-container">
                 <a class="user-nav-link link-logo" aria-label="Логотип магазина Техномарт">Техномарт</a>
-                <a class="user-nav-link link-search">
+                <a  href="#" class="user-nav-link link-search">
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
                   Поиск:
                 </a>
               </div>
               <div class="user-nav-list-container">
-                <a class="user-nav-link link-bookmark">
+                <a href="#" class="user-nav-link link-bookmark">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
                   Закладки: 0
                 </a>
-                <a class="user-nav-link link-basket">
+                <a href="#" class="user-nav-link link-basket">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                 Корзина: 0
                 </a>
-                <a class="user-nav-link link-order">Оформить заказ</a>
+                <a href="#" class="user-nav-link link-order">Оформить заказ</a>
               </div>
             </nav>
           </div>
@@ -87,18 +87,18 @@
                 <div class="features-slider-slide slide-1 active-slide">
                   <p class="features-slider-slide-title">Перфораторы</p>
                   <p class="features-slider-slide-text">Настоящие мужские игрушки</p>
-                  <a href="#" class="main-link features-slider-link">Открыть каталог</a>
+                  <a href="catalog.html" class="main-link features-slider-link">Открыть каталог</a>
                 </div>
                 <div class="features-slider-slide slide-2">
                   <p class="features-slider-slide-title">Дрели</p>
                   <p class="features-slider-slide-text">Соседям на радость!</p>
-                  <a href="#" class="main-link features-slider-link">Открыть каталог</a>
+                  <a href="catalog.html" class="main-link features-slider-link">Открыть каталог</a>
                 </div>
                 <div class="slide-buttons buttons-circle">
-                  <button type="button" name="button" class="button-slide button-one active-button" id="button-slide-1">
+                  <button type="button" name="button" class="button-slide button-circle-left active-button" id="button-slide-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
                   </button>
-                  <button type="button" name="button" class="button-slide button-two" id="button-slide-2">
+                  <button type="button" name="button" class="button-slide button-circle-right" id="button-slide-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg>
                   </button>
                 </div>
@@ -132,8 +132,10 @@
             <li class="products-item">
               <img src="img/perforator-1.jpg" alt="Перфоратор BOSCH BFG 9000">
               <h3>Перфоратор BOSCH BFG 9000</h3>
-              <span class="products-sale">32500 Р.</span>
-              <a href="#">25500 Р.</a>
+              <span class="products-item-price price-sale">32500 Р.</span>
+              <div class="products-item-price-wrapper">
+                <p class="products-item-price price-actual">25500 Р.</p>
+              </div>
               <span class="products-new"></span>
               <div class="products-item-background">
                 <button type="button" name="button">Купить</button>
@@ -143,8 +145,10 @@
             <li class="products-item">
               <img src="img/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <span class="products-sale">22500 Р.</span>
-              <a href="#">15500 Р.</a>
+              <span class="products-item-price price-sale">22500 Р.</span>
+              <div class="products-item-price-wrapper">
+                <p href="#" class="products-item-price price-actual">25500 Р.</>
+              </div>
               <span class="products-new"></span>
               <div class="products-item-background">
                 <button type="button" name="button">Купить</button>
@@ -154,8 +158,10 @@
             <li class="products-item">
               <img src="img/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <span class="products-sale">30500 Р.</span>
-              <a href="#">25500 Р.</a>
+              <span class="products-item-price price-sale">30500 Р.</span>
+              <div class="products-item-price-wrapper">
+                <p href="#" class="products-item-price price-actual">25500 Р.</p>
+              </div>
               <span class="products-new"></span>
               <div class="products-item-background">
                 <button type="button" name="button">Купить</button>
@@ -163,10 +169,12 @@
               </div>
             </li>
             <li class="products-item">
-              <img src="img/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/perforator-2.jpg" alt="Перфоратор BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <span></span>
-              <a href="#">12500 Р.</a>
+              <div class="products-item-price-wrapper">
+                <p href="#" class="products-item-price price-actual">25500 Р.</p>
+              </div>
               <span class="products-new products-new-active"></span>
               <div class="products-item-background">
                 <button type="button" name="button">Купить</button>
@@ -181,42 +189,42 @@
             <a href="#" class="main-link popular-link">Все производители</a>
           </div>
           <ul class="producers-list">
-            <li>
+            <li class="producers-item">
               <a href="#">
-                <img src="img/producers-bosh.png" alt="BOSCH">
+                <img src="img/producers-bosch.jpg" alt="BOSCH">
               </a>
             </li>
-            <li>
+            <li class="producers-item">
               <a href="#">
                 <img src="img/producers-makita.png" alt="Makita">
               </a>
             </li>
-            <li>
+            <li class="producers-item">
               <a href="#">
                 <img src="img/producers-deWALT.png" alt="DeWALT">
               </a>
             </li>
-            <li>
+            <li class="producers-item">
               <a href="#">
                 <img src="img/producers-Интерскол.png" alt="Интерскол">
               </a>
             </li>
-            <li>
+            <li class="producers-item">
               <a href="#">
                 <img src="img/producers-hitachi.png" alt="HITACHI">
               </a>
             </li>
-            <li>
+            <li class="producers-item">
               <a href="#">
                 <img src="img/producers-LG.png" alt="LG">
               </a>
             </li>
-            <li>
+            <li class="producers-item">
               <a href="#">
                 <img src="img/producers-AEG.png" alt="AEG">
               </a>
             </li>
-            <li>
+            <li class="producers-item">
               <a href="#">
                 <img src="img/producers-Metabo.png" alt="metabo">
               </a>

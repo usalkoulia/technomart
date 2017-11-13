@@ -34,10 +34,22 @@ p {
 h2 {
   margin: 0;
   font-size: 30px;
-  font-family: "Cuprum", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .centering {
@@ -318,14 +330,15 @@ h2 {
   padding: 7px 48px;
 }
 
-.slide-buttons {
-  position: absolute;
-  left: 0;
-  top: 0;
+.buttons-circle .button-slide {
+  background: transparent;
+  border: none;
 }
 
-.features-slider {
-  position: relative;
+.button-slide.button-circle-left {
+  position: absolute;
+  left: 0;
+  top: 115px;
 }
 
 /*====================================================================================================================*\
@@ -335,20 +348,81 @@ h2 {
 .products-list,
 .producers-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
-.popular-products-wrapper {
+.popular-products-wrapper,
+.popular-producers-wrapper {
   display: flex;
   justify-content: space-between;
   background-color: #f9f5f0;
   padding: 25px 26px 24px 27px;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-.popular.popular-producers {
+.popular-link {
+  padding: 8px 0;
+  width: 253px;
+  text-align: center;
+ }
+
+.products-item {
+  border: 1px solid #eaeaea;
+  padding: 0px 14px;
+  background-color: #ffffff;
+  width: 220px;
+  height: 315px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.products-item-price {
+  font-size: 17px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.products-item img {
+  width: 200px;
+}
+
+.price-sale {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.products-item-background {
   display: none;
 }
 
- .popular-link {
-  padding: 8px 54px;
- }
+.products-item-price-wrapper {
+  /*left: 0;
+  right: 0;
+  position: absolute;*/
+  text-align: center;
+  bottom: 20px;
+  background-image: url("../svg/svg-technomart/red-button.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+.producers-item {
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  text-align: center;
+  width: 220px;
+  height: 145px;
+  margin: 10px;
+}
+
+.products-new,
+.products-item-background {
+  position: absolute;
+}
