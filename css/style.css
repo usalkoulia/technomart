@@ -33,7 +33,7 @@ p {
 
 h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
@@ -74,6 +74,7 @@ img {
   font-size: 14px;
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
+  border: none;
   border-radius: 5px;
 }
 
@@ -393,7 +394,7 @@ img {
 }
 
 .popular-producers {
-  margin-bottom: 133px;
+  margin-bottom: 64px;
 }
 
 .popular-products-wrapper,
@@ -487,15 +488,20 @@ img {
 }
 
 /*====================================================================================================================*\
-  SERVICES
+  ABOUT-SERVICES
 \*====================================================================================================================*/
 
 .about-services {
   font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #f4f7f9;
+  width: 100%;
+  padding-bottom: 38px;
 }
 
 .about-services-container {
   width: 400px;
+  padding-top: 70px;
+  margin-bottom: 67px;
 }
 
 .about-services-title {
@@ -504,6 +510,125 @@ img {
   margin-bottom: 29px;
   font-family: "Cuprum", sans-serif;
 }
+
+.about-services-slider-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list {
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.services-list::after {
+  content: url("../img/slider-stripe.png");
+  position: absolute;
+  right: -1px;
+  top: -36px;
+}
+
+.services-item {
+  background-color: #32425c;
+  color: #ffffff;
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 18px 22px;
+  border-bottom: 1px solid #4d627b;
+}
+
+.services-item.item-active {
+  background-color: #ffffff;
+}
+
+.services-item.item-active a {
+  color: #32425c;
+}
+
+.about-services-slider {
+  padding-top: 5px;
+  /*padding-left: 80px;*/
+}
+
+.services-slider-block {
+  background-repeat: no-repeat;
+  background-position: 151px 19px;
+  width: 620px;
+  height: 263px;
+}
+
+.services-slider-block h2 {
+  margin-bottom: 31px;
+}
+
+.services-slider-block.slide-1 {
+  background-image: url("../img/services-pic-1.png");
+}
+
+.services-slider-block.slide-2 {
+  background-image: url("../img/services-pic-2.png");
+}
+
+.services-slider-block.slide-3 {
+  background-image: url("../img/services-pic-3.png");
+}
+
+.services-slider-block.slide-1 p {
+  width: 275px;
+}
+
+.services-slider-block.slide-2 p,
+.services-slider-block.slide-3 p {
+  width: 380px;
+}
+
+.services-slider-block.slide-3 p {
+  width: 380px;
+  margin-bottom: 20px;
+}
+
+.services-slider-block.slide-3,
+.services-slider-block.slide-2 {
+  display: none;
+}
+
+.services-slider-button {
+  background-color: #ff5357;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Cuprum", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 45px;
+}
+
+/*====================================================================================================================*\
+  ABOUT-COMPANY
+\*====================================================================================================================*/
+
+.about-company-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.about-company-delivery-container {
+  width: 450px;
+}
+
+
+
+
+.about-company-map-modal {
+  display: none;
+}
+
+
+
 
 
 
@@ -548,7 +673,7 @@ img {
 }
 
 .footer-nav-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .footer-nav-list {
@@ -556,7 +681,7 @@ img {
 }
 
 .footer-nav-list-yellow {
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .footer-nav-list-yellow a {
