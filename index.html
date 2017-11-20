@@ -127,7 +127,7 @@
         </section>
         <section class="popular popular-products">
           <div class="popular-products-wrapper">
-            <h2>Популярные товары:</h2>
+            <h3>Популярные товары:</h3>
             <a href="#" class="main-link popular-link">Все популярные товары</a>
           </div>
           <ul class="products-list">
@@ -187,7 +187,7 @@
         </section>
         <section class="popular popular-producers">
           <div class="popular-producers-wrapper">
-            <h2>Популярные производители:</h2>
+            <h3>Популярные производители:</h3>
             <a href="#" class="main-link popular-link">Все производители</a>
           </div>
           <ul class="producers-list">
@@ -292,6 +292,32 @@
               </div>
             </div>
           </div>
+          <div class="write-us-modal">
+            <form class="write-us-form" action="index.html" method="post">
+              <div class="form-input-wrapper">
+                <label for="write-us-name">
+                  Ваше имя:
+                </label>
+                <input type="text" name="name" class="form-input input-narrow" id="write-us-name" placeholder="Представьтесь, пожалуйста">
+              </div>
+              <div class="form-input-wrapper">
+                <label for="write-us-email">
+                  Ваш e-mail:
+                </label>
+                <input type="email" name="e-mail" class="form-input input-narrow" id="write-us-email" placeholder="Для отправки ответа">
+              </div>
+              <div class="form-input-wrapper">
+                <label for="write-us-text">
+                  Текст письма:
+                </label>
+                <textarea placeholder="В свободной форме" class="form-input input-wide" id="write-us-text"></textarea>
+              </div>
+              <div class="submit-button-wrapper">
+                <input type="submit" name="submit" class="main-link submit-button" value="Отправить">
+              </div>
+            </form>
+            <button type="button" name="button" class="feedback-modal-button" aria-label="Кнопка для закрытия модального окна">×</button>
+          </div>
         </section>
     </main>
     <footer>
@@ -344,11 +370,11 @@
                 </ul>
               </div>
               <div class="footer-social-feedback">
-                <div class="feedback-block">
+                <div class="feedback-block block-1">
                   <p>Обратная связь:</p>
                   <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </div>
-                <div class="feedback-block">
+                <div class="feedback-block block-2">
                   <p>Разработано — </p>
                   <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                 </div>
