@@ -97,46 +97,50 @@
               <p>Фильтр:</p>
               <fieldset>
                 <legend>Цена:</legend>
-                <div class="catalog-filters-form-range">
-                  <div class="range-scale">
-                    <div class="range-bar"></div>
+                <div class="form-range-wrapper">
+                  <div class="catalog-filters-form-range">
+                    <div class="range-scale">
+                      <div class="range-bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
                   </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
                 </div>
                 <div class="catalog-filters-price">
-                  <input type="text" name="price-from" value="0">
-                  <input type="text" name="price-to" value="30000">
+                  <input type="text" name="price-from" class="filters-price price-from" value="0">
+                  <input type="text" name="price-to" class="filters-price" value="30000">
                 </div>
               </fieldset>
-              <fieldset>
-                <legend>Производители:</legend>
-                <label for="BOSCH" class="filters-label">
-                  <input type="checkbox" name="BOSCH" value="BOSCH" id="BOSCH" class="visually-hidden">
-                  <span class="svg-checkbox"></span>
-                  BOSCH
-                </label>
-                <label for="ИНТЕРСКОЛ" class="filters-label">
-                  <input type="checkbox" name="ИНТЕРСКОЛ" value="ИНТЕРСКОЛ" id="ИНТЕРСКОЛ" class="visually-hidden">
-                  <span class="svg-checkbox"></span>
-                  ИНТЕРСКОЛ
-                </label>
-                <label for="MAKITA" class="filters-label">
-                  <input type="checkbox" name="MAKITA" value="MAKITA" id="MAKITA" class="visually-hidden">
-                  <span class="svg-checkbox"></span>
-                  MAKITA
-                </label>
-                <label for="DEWALT" class="filters-label">
-                  <input type="checkbox" name="DEWALT" value="DEWALT" id="DEWALT" class="visually-hidden">
-                  <span class="svg-checkbox"></span>
-                  DEWALT
-                </label>
-                <label for="HITACHI" class="filters-label">
-                  <input type="checkbox" name="HITACHI" value="HITACHI" id="HITACHI" class="visually-hidden">
-                  <span class="svg-checkbox"></span>
-                  HITACHI
-                </label>
-              </fieldset>
+              <div class="fieldset-producers-wrapper">
+                <fieldset>
+                  <legend>Производители:</legend>
+                  <label for="BOSCH" class="filters-label">
+                    <input type="checkbox" name="BOSCH" value="BOSCH" id="BOSCH" class="visually-hidden" checked>
+                    <span class="svg-checkbox"></span>
+                    BOSCH
+                  </label>
+                  <label for="ИНТЕРСКОЛ" class="filters-label">
+                    <input type="checkbox" name="ИНТЕРСКОЛ" value="ИНТЕРСКОЛ" id="ИНТЕРСКОЛ" class="visually-hidden">
+                    <span class="svg-checkbox"></span>
+                    ИНТЕРСКОЛ
+                  </label>
+                  <label for="MAKITA" class="filters-label">
+                    <input type="checkbox" name="MAKITA" value="MAKITA" id="MAKITA" class="visually-hidden" checked>
+                    <span class="svg-checkbox"></span>
+                    MAKITA
+                  </label>
+                  <label for="DEWALT" class="filters-label">
+                    <input type="checkbox" name="DEWALT" value="DEWALT" id="DEWALT" class="visually-hidden">
+                    <span class="svg-checkbox"></span>
+                    DEWALT
+                  </label>
+                  <label for="HITACHI" class="filters-label">
+                    <input type="checkbox" name="HITACHI" value="HITACHI" id="HITACHI" class="visually-hidden">
+                    <span class="svg-checkbox"></span>
+                    HITACHI
+                  </label>
+                </fieldset>
+              </div>
               <fieldset>
                 <legend>Питание:</legend>
                 <label for="accumulator" class="filters-label">
@@ -150,7 +154,7 @@
                   Сетевые
                 </label>
               </fieldset>
-              <button type="button" name="button">Показать</button>
+              <button type="button" name="button" class="filters-button">Показать</button>
             </section>
             <section class="catalog-products">
               <div class="catalog-products-sorting">
