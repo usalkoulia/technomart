@@ -213,6 +213,48 @@ img {
 }
 
 /*====================================================================================================================*\
+  HEADER CATALOG PAGE
+\*====================================================================================================================*/
+
+.user-name {
+  background-color: #ffffff;
+  display: flex;
+  width: 300px;
+  height: 45px;
+  align-items: center;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
+.user-name p {
+  font-size: 21px;
+}
+
+.user-name svg {
+  margin-right: 13px;
+}
+
+.user-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  margin-left: 10px;
+}
+
+.user-item a {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-account-link {
+
+}
+
+/*====================================================================================================================*\
   FEATURES
 \*====================================================================================================================*/
 
@@ -703,6 +745,157 @@ img {
 }
 
 /*====================================================================================================================*\
+  CATALOG PAGE
+\*====================================================================================================================*/
+
+.catalog-filters,
+.catalog-products {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs li::before:not(:first-of-type) {
+  content: ">";
+  color: #c1c6ce;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.title-wrapper {
+  background-color: #f2f6f8;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.catalog-wrapper {
+  display: flex;
+}
+
+.catalog-filters {
+  margin-right: 20px;
+}
+
+.catalog-filters p {
+  background-color: #f7f3ec;
+}
+
+.catalog-filters fieldset {
+  border: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filters fieldset legend {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.catalog-filters-form-range {
+  position: relative;
+
+  margin-bottom: 32px;
+  width: 150px;
+}
+
+.form-range .range-scale {
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-range .range-bar {
+  width: 60%;
+  height: 2px;
+
+  background-color: green;
+}
+
+.form-range .range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 2px 0 #ababab;
+          box-shadow: 0 2px 2px 0 #ababab;
+  cursor: pointer;
+}
+
+.form-range .range-toggle:hover {
+  width: 5px;
+  height: 5px;
+}
+
+.range-toggle.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle.range-toggle-max {
+  left: 60%;
+}
+
+.svg-checkbox {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  background-image: url("../svg/svg-technomart/checkbox-off.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.svg-radio {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../svg/svg-technomart/radio-off.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.filters-label {
+  margin-bottom: 17px;
+}
+
+
+
+
+.catalog-products-sorting {
+  display: flex;
+  background-color: #f7f3ec;
+  width: 700px;
+}
+
+.sorting-type-links {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.sorting-type-links a {
+  border-bottom: 1px dashed #ee3643;
+}
+
+.sorting-priority-button {
+  background: transparent;
+  border: none;
+  color: #c5c5c5;
+}
+
+/*====================================================================================================================*\
   FOOTER
 \*====================================================================================================================*/
 
@@ -835,6 +1028,7 @@ img {
   position: relative;
   box-sizing: border-box;
   padding: 54px 80px;
+  position: fixed;
 }
 
 .write-us-form {
@@ -875,13 +1069,12 @@ img {
 }
 
 .submit-button-wrapper {
-  width: 100%;
   background-color: #f4f4f4;
   padding: 37px 80px;
   position: absolute;
   bottom: 0;
-  display: flex;
-  align-items: center;
+  left: 0;
+  right: 0;
 }
 
 .submit-button {
