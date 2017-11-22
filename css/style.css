@@ -481,6 +481,11 @@ img {
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.products-item h4 {
+  text-transform: none;
 }
 
 .products-item-price {
@@ -773,6 +778,7 @@ img {
 .breadcrumbs a {
   color: #000000;
   text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .title-wrapper {
@@ -963,7 +969,6 @@ img {
   display: flex;
   justify-content: space-between;
   background-color: #f7f3ec;
-  width: 700px;
   padding: 10px 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -971,11 +976,20 @@ img {
 
 .sorting-type-links {
   text-transform: uppercase;
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 110px;
 }
 
 .sorting-type-links a {
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dotted #ee3643;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.sorting-type-active-link {
+  border-bottom: none;
+  color: #ee3643;
 }
 
 .sorting-priority-button {
@@ -984,6 +998,18 @@ img {
   color: #c5c5c5;
 }
 
+.sorting-priority-button.active-button {
+  color: #ee3643;
+}
+
+
+.basket-modal {
+  display: none;
+}
+
+.catalog-product-features p {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
 /*====================================================================================================================*\
   FOOTER
 \*====================================================================================================================*/
