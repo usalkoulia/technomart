@@ -792,6 +792,8 @@ img {
 
 .catalog-filters p {
   background-color: #f7f3ec;
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
 
 .catalog-filters fieldset {
@@ -867,6 +869,16 @@ img {
   justify-content: space-between;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.catalog-filters-price::after {
+  content: "—";
+  position: absolute;
+  font-size: 15px;
+  color: #000000;
+  top: 5px;
+  left: 105px;
 }
 
 .filters-price {
@@ -878,15 +890,6 @@ img {
   text-align: center;
   position: relative;
   margin-bottom: 25px;
-}
-
-.filters-price.price-from::after {
-  content: "—";
-  position: absolute;
-  font-size: 15px;
-  color: #000000;
-  top: 0;
-  left: 0;
 }
 
 .svg-checkbox {
@@ -952,19 +955,27 @@ img {
   cursor: pointer;
 }
 
-.catalog-products-sorting {
-  display: flex;
-  background-color: #f7f3ec;
+.catalog-products {
   width: 700px;
 }
 
-.sorting-type-links {
+.catalog-products-sorting {
   display: flex;
+  justify-content: space-between;
+  background-color: #f7f3ec;
+  width: 700px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.sorting-type-links {
   text-transform: uppercase;
 }
 
 .sorting-type-links a {
   border-bottom: 1px dashed #ee3643;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .sorting-priority-button {
