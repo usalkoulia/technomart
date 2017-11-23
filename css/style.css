@@ -145,17 +145,22 @@ img {
 
 .user-nav-link.link-search {
   position: relative;
+  padding: 0;
 }
 
 .user-nav-link.link-search input[type="search"] {
   background-color: #293448;
   border: none;
   width: 195px;
+  padding: 11px 46px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 .user-nav-link.link-search svg {
   position: absolute;
-  top: 21px;
+  top: 12px;
   left: 17px;
 }
 
