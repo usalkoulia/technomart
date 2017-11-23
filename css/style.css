@@ -89,11 +89,6 @@ img {
   color: #ffffff;
 }
 
-::-webkit-input-placeholder {color:#ffffff;}
-::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
-:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#ffffff;}
-
 /*====================================================================================================================*\
   ХЕДЕР
 \*====================================================================================================================*/
@@ -161,7 +156,7 @@ img {
 .link-search input[type="search"] {
   background-color: #293448;
   border: none;
-  width: 195px;
+  width: 250px;
   padding: 11px 46px;
   font-size: 17px;
   color: #ffffff;
@@ -179,12 +174,14 @@ img {
 
 .link-search input[type="search"]:focus + svg {
   fill: #ee3643;
+  opacity: 1;
 }
 
 .link-search svg {
   position: absolute;
   top: 12px;
   left: 17px;
+  fill: #ffffff;
 }
 
 .link-logo {
@@ -260,6 +257,7 @@ img {
 
 .registration-item svg {
   margin-right: 5px;
+  fill: #c5c5c5;
 }
 
 .registration-item a {
@@ -280,16 +278,22 @@ img {
   color: #c5c5c5;
 }
 
-.user-name svg path:hover {
+.user-name:hover svg path {
   fill: #32435d;
 }
 
-.user-name svg path:active {
+.user-name svg path,
+.user-name:active svg path,
+.item-enter:active svg path {
   fill: #c5c5c5;
 }
 
 .item-enter {
   margin-right: 12px;
+}
+
+.item-enter:hover svg {
+  fill: #32425b;
 }
 
 .main-nav-list {
@@ -354,6 +358,16 @@ img {
 .basket-active {
   background-color: #ee3643;
 }
+
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff;}
+
+input:focus::-webkit-input-placeholder {color:#000000;}
+input:focus::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
+input:focus:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+input:focus:-ms-input-placeholder      {color:#000000;}
 
 /*====================================================================================================================*\
   FEATURES
@@ -671,8 +685,8 @@ img {
   left: 14px;
 }
 
-.button-buy svg:hover,
-.button-buy svg:active {
+.button-buy:hover svg,
+.button-buy:active svg {
   opacity: 1;
 }
 
