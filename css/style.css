@@ -626,7 +626,7 @@ img {
   display: none;
 }
 
-.products-item-background:hover {
+.products-item:hover .products-item-background {
   display: block;
 }
 
@@ -711,6 +711,10 @@ img {
   height: 143px;
   margin-bottom: 23px;
   box-sizing: border-box;
+}
+
+.producers-item:hover {
+  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.3);
 }
 
 .products-new,
@@ -1094,6 +1098,10 @@ img {
 
 .filters-label {
   font-size: 15px;
+}
+
+.filters-label:hover {
+  box-shadow: 0 2px 0 0 #6495ED; 
 }
 
 .filters-label input[type="checkbox"]:checked + .svg-checkbox {
