@@ -327,6 +327,9 @@ img {
 .nav-item a {
   padding: 19px 29px;
   display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .nav-item:hover {
@@ -678,7 +681,9 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .products-item-background {
-  z-index: 99;
+ /*Отступ между нью и рамкой??*/
+  /*border: 1px solid #eaeaea;*/
+  z-index: 0;
   background-color: #ffffff;
   left: -20px;
   top: 0px;
@@ -764,6 +769,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   top: 7px;
   right: -21px;
   text-align: center;
+  z-index: 99;
+  text-transform: none;
 }
 
 .producers-item {
