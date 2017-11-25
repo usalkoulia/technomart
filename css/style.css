@@ -113,6 +113,7 @@ img {
 
 .obertka-s-marginom-index {
   margin-bottom: 57px;
+  padding-bottom: 24px;
 }
 
 .obertka-s-marginom-catalog {
@@ -231,7 +232,7 @@ img {
 .header-block {
   display: flex;
   justify-content: space-between;
-  padding-top: 48px;
+  padding-top: 46px;
   margin-bottom: 40px;
 }
 
@@ -242,6 +243,7 @@ img {
   line-height: 23px;
   width: 200px;
   margin-left: 52px;
+  padding-top: 3px;
 }
 
 .header-block-contacts {
@@ -252,7 +254,7 @@ img {
   font-size: 21px;
   color: #ee3643;
   border: 3px solid #ffffff;
-  padding: 6px 11px 6px 38px;
+  padding: 7px 17px 6px 38px;
   position: relative;
   box-sizing: border-box;
   width: 270px;
@@ -261,12 +263,14 @@ img {
 
 .header-block-contacts-number svg {
   position: absolute;
-  left: 16px;
+  left: 12px;
+  top: 10px;
 }
 
 .header-block-contacts-address {
   font-size: 14px;
   color: #32425c;
+  padding-top: 4px;
 }
 
 .registration-list {
@@ -286,7 +290,7 @@ img {
   color: #000000;
   font-size: 21px;
   background-color: #ffffff;
-  padding: 10px 24px;
+  padding: 10px 24px 11px 24px;
 }
 
 .user-name {
@@ -321,7 +325,12 @@ img {
 }
 
 .item-enter {
-  margin-right: 12px;
+  margin-right: 10px;
+}
+
+.item-enter a {
+  padding-left: 17px;
+  padding-right: 26px;
 }
 
 .item-enter:hover svg {
@@ -341,7 +350,7 @@ img {
 }
 
 .nav-item a {
-  padding: 19px 29px;
+  padding: 19px 29px 18px 29px;
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
