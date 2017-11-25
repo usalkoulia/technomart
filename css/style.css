@@ -227,6 +227,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 48px;
+  margin-bottom: 40px;
 }
 
 .header-block-promo {
@@ -283,6 +284,10 @@ img {
   padding: 10px 24px;
 }
 
+.user-name {
+  position: relative;
+}
+
 .registration-item a:hover,
 .user-item a:hover {
   color: #ee3642;
@@ -304,6 +309,12 @@ img {
   fill: #c5c5c5;
 }
 
+.user-account-link svg {
+  position: absolute;
+  top: 12px;
+  right: -3px;
+}
+
 .item-enter {
   margin-right: 12px;
 }
@@ -313,7 +324,7 @@ img {
 }
 
 .main-nav-list {
-  margin: 41px 0;
+  margin-bottom: 40px;
   padding: 0 21px;
   background-color: #32425c;
   box-shadow: 0 5px 0 0 #293449;
@@ -356,10 +367,12 @@ img {
   align-items: center;
   padding: 13px;
   box-sizing: border-box;
+  margin-bottom: 3px;
 }
 
 .user-name p {
   font-size: 21px;
+  line-height: 25px;
 }
 
 .user-name svg {
@@ -373,8 +386,12 @@ img {
   position: relative;
 }
 
-.user-item {
-  margin-left: 16px;
+.user-item:first-of-type {
+  margin-left: 18px;
+}
+
+.user-item:last-of-type {
+  margin-left: 32px;
 }
 
 .user-item a {
@@ -386,12 +403,12 @@ img {
 .user-item:first-of-type::after {
   content: "";
   width: 4px;
-  height: 5px;
+  height: 4px;
   border-radius: 50%;
   background-color: #31425c;
   position: absolute;
   top: 10px;
-  left: 88px;
+  left: 108px;
 }
 
 .basket-active {
@@ -681,8 +698,6 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .products-item-background {
- /*Отступ между нью и рамкой??*/
-  /*border: 1px solid #eaeaea;*/
   z-index: 0;
   background-color: #ffffff;
   left: -20px;
@@ -771,6 +786,11 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   text-align: center;
   z-index: 99;
   text-transform: none;
+  display: none;
+}
+
+.products-new.products-new-active {
+  display: block;
 }
 
 .producers-item {
@@ -1277,11 +1297,6 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   pointer-events: none;
 }
 
-
-.basket-modal {
-  display: none;
-}
-
 .catalog-product-features h3 {
   margin-bottom: 29px;
 }
@@ -1445,10 +1460,14 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   width: 625px;
   height: 427px;
   border-top: 7px solid #ff5257;
-  position: relative;
+  position: fixed;
   box-sizing: border-box;
   padding: 54px 80px;
-  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+  margin-left: -312px;
+  margin-top: -213px;
 }
 
 .write-us-form {
@@ -1515,4 +1534,38 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 .submit-button,
 .feedback-modal-button {
   cursor: pointer;
+}
+
+.basket-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 280px;
+  border-top: 7px solid #ff5257;
+  background-color: #ffffff;
+  background-image: url(../svg/svg-technomart/form-1.svg);
+  background-repeat: no-repeat;
+  background-position: 55px 50px;
+  padding: 70px 120px;
+  box-sizing: border-box;
+  margin-left: -310px;
+  margin-top: -140px;
+}
+
+.basket-popup h3 {
+  text-transform: none;
+}
+
+.link-basket {
+  padding: 11px 40px;
+}
+
+.link-basket:not(.link-basket-white) {
+  margin-right: 20px;
+}
+
+.link-basket-white {
+  background-color: #ffffff;
+  color: #000000;
 }
