@@ -134,7 +134,7 @@ img {
 }
 
 .user-nav-link:not(.link-logo) {
-  padding: 12px 24px;
+  padding: 12px 23px;
 }
 
 .user-nav-link svg {
@@ -1468,6 +1468,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   background-color: #ffffff;
   margin-left: -312px;
   margin-top: -213px;
+  z-index: 100;
+  display: none;
 }
 
 .write-us-form {
@@ -1551,21 +1553,48 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   box-sizing: border-box;
   margin-left: -310px;
   margin-top: -140px;
+  z-index: 100;
+  display: none;
 }
 
 .basket-popup h3 {
   text-transform: none;
 }
 
-.link-basket {
+.button-basket {
   padding: 11px 40px;
 }
 
-.link-basket:not(.link-basket-white) {
+.button-basket:not(.button-basket-white) {
   margin-right: 20px;
 }
 
-.link-basket-white {
+.button-basket-white {
   background-color: #ffffff;
   color: #000000;
 }
+
+.button-basket-white:hover,
+.button-basket-white:active {
+  background-color: #ffffff;
+}
+
+.write-us-modal input::-webkit-input-placeholder {color:#a9a9a9;}
+.write-us-modal input::-moz-placeholder          {color:#a9a9a9;}/* Firefox 19+ */
+.write-us-modal input:-moz-placeholder           {color:#a9a9a9;}/* Firefox 18- */
+.write-us-modal input:-ms-input-placeholder      {color:#a9a9a9;}
+
+.write-us-modal input:focus::-webkit-input-placeholder {color:#a9a9a9;}
+.write-us-modal input:focus::-moz-placeholder          {color:#a9a9a9;}/* Firefox 19+ */
+.write-us-modal input:focus:-moz-placeholder           {color:#a9a9a9;}/* Firefox 18- */
+.write-us-modal input:focus:-ms-input-placeholder      {color:#a9a9a9;}
+
+.write-us-modal textarea::-webkit-input-placeholder {color:#a9a9a9;}
+.write-us-modal textarea::-moz-placeholder          {color:#a9a9a9;}/* Firefox 19+ */
+.write-us-modal textarea:-moz-placeholder           {color:#a9a9a9;}/* Firefox 18- */
+.write-us-modal textarea:-ms-input-placeholder      {color:#a9a9a9;}
+
+.write-us-modal textarea:focus::-webkit-input-placeholder {color:#a9a9a9;}
+.write-us-modal textarea:focus::-moz-placeholder          {color:#a9a9a9;}/* Firefox 19+ */
+.write-us-modal textarea:focus:-moz-placeholder           {color:#a9a9a9;}/* Firefox 18- */
+.write-us-modal textarea:focus:-ms-input-placeholder      {color:#a9a9a9;}
