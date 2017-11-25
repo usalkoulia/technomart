@@ -644,7 +644,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .products-list {
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 
 .popular-producers {
@@ -672,7 +672,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   padding: 0px 14px;
   background-color: #ffffff;
   width: 220px;
-  height: 315px;
+  height: 318px;
   box-sizing: border-box;
   text-align: center;
   position: relative;
@@ -797,10 +797,11 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   background-color: #ff5357;
   color: #ffffff;
   transform: rotate(45deg);
-  width: 81px;
+  width: 85px;
   font-size: 14px;
-  top: 8px;
-  right: -20px;
+  line-height: 27px;
+  top: 5px;
+  right: -22px;
   text-align: center;
   z-index: 99;
   text-transform: none;
@@ -1335,8 +1336,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .catalog-pagination li {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -1345,6 +1346,10 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-right: 10px;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.catalog-pagination li:last-of-type {
+  padding: 0px 107px 0px 31px;
 }
 
 .catalog-pagination li a {
