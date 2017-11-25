@@ -133,10 +133,6 @@ img {
   display: flex;
 }
 
-.user-nav-link:not(.link-logo) {
-  padding: 12px 23px;
-}
-
 .user-nav-link svg {
   margin-right: 10px;
   vertical-align: middle;
