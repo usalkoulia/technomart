@@ -1299,7 +1299,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .filters-label:last-child {
-  margin-bottom: 19px;
+  margin-bottom: 24px;
 }
 
 .label-radio {
@@ -1315,10 +1315,10 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   text-transform: uppercase;
   background: transparent;
   border: 1px solid #e5e5e5;
-  padding: 12px 33px 10px 37px;
+  padding: 12px 31px 10px 37px;
   box-sizing: border-box;
   cursor: pointer;
-  margin-top: 53px;
+  margin-top: 50px;
 }
 
 .catalog-products {
@@ -1698,7 +1698,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-left: -310px;
   margin-top: -140px;
   z-index: 100;
-  display: block;
+  display: none;
   box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
