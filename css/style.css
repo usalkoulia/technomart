@@ -16,10 +16,6 @@ body {
   background-color: #ffffff;
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
   margin: 0;
   padding: 0;
@@ -87,6 +83,7 @@ img {
   border: none;
   border-radius: 4px;
   color: #ffffff;
+  align-self: flex-start;
 }
 
 .main-link:hover {
@@ -128,6 +125,7 @@ img {
   justify-content: space-between;
   font-size: 17px;
   line-height: 18px;
+  flex-wrap: wrap;
 }
 
 .user-nav-list-container {
@@ -298,6 +296,10 @@ img {
   justify-content: space-between;
 }
 
+.registration-item {
+  list-style: none;
+}
+
 .registration-item svg {
   margin-right: 5px;
   fill: #c5c5c5;
@@ -337,8 +339,8 @@ img {
 
 .user-account-link svg {
   position: absolute;
-  top: 12px;
-  right: -3px;
+  top: 14px;
+  right: -1px;
 }
 
 .item-enter {
@@ -364,6 +366,8 @@ img {
 
 .nav-item {
   flex-grow: 1;
+  vertical-align: middle;
+  list-style-type: none;
 }
 
 .nav-item a {
@@ -401,13 +405,14 @@ img {
   margin-bottom: 3px;
 }
 
-.user-name p {
+.user-name a {
   font-size: 21px;
   line-height: 25px;
+  color: #000000;
 }
 
 .user-name svg {
-  margin-right: 13px;
+  margin-right: 10px;
 }
 
 .user-list {
@@ -415,6 +420,10 @@ img {
   padding: 0;
   margin: 0;
   position: relative;
+}
+
+.user-item {
+  list-style-type: none;
 }
 
 .user-item:first-of-type {
@@ -573,6 +582,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 .features-slider-slide {
   height: 266px;
   background-repeat: no-repeat;
+  background-color: ##927f6e;
   color: #ffffff;
   padding: 29px 23px;
 }
@@ -682,10 +692,15 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-bottom: 21px;
 }
 
+.popular-producers-wrapper h3 {
+  max-width: 600px;
+}
+
 .popular-link {
   padding: 8px 2px;
   width: 248px;
   text-align: center;
+  align-self: flex-start;
  }
 
 .products-item {
@@ -693,7 +708,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   padding: 0px 14px;
   background-color: #ffffff;
   width: 220px;
-  height: 318px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   text-align: center;
   position: relative;
@@ -841,6 +856,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   height: 145px;
   margin-bottom: 19px;
   box-sizing: border-box;
+  list-style: none;
 }
 
 .producers-item:hover {
@@ -924,7 +940,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .services-slider-block {
   background-repeat: no-repeat;
-  height: 261px;
+  min-height: 261px;
   width: 630px;
   margin-right: -10px;
   margin-top: -2px;
@@ -1023,6 +1039,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 .delivery-item {
   position: relative;
   padding-left: 35px;
+  list-style: none;
 }
 
 .delivery-item:not(:last-child) {
@@ -1108,6 +1125,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 .breadcrumbs li {
   margin-right: 40px;
   position: relative;
+  list-style-type: none;
 }
 
 .breadcrumbs li:not(:last-child)::after {
@@ -1161,7 +1179,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   flex-direction: column;
 }
 
-.catalog-filters fieldset legend {
+.catalog-filters legend {
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 16px;
@@ -1342,30 +1360,25 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   padding: 0px 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
-  height: 38px;
+  min-height: 38px;
   align-items: center;
 }
 
 .sorting-type-links {
   text-transform: uppercase;
-  width: 360px;
+  width: 422px;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
-  margin-left: 98px;
+  margin-left: 96px;
 }
 
 .sorting-type-links a {
   border-bottom: 1px dotted #ee3643;
   color: rgba(0, 0, 0, 0.4);
   line-height: 1em;
-}
-
-.sorting-type-links a:first-of-type {
-  margin-right: 70px;
-}
-
-.sorting-type-links a:nth-of-type(2) {
-  margin-right: 65px;
+  margin: 5px;
 }
 
 .sorting-type-links a:hover {
@@ -1432,6 +1445,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-right: 10px;
   box-sizing: border-box;
   cursor: pointer;
+  list-style-type: none;
 }
 
 .catalog-pagination li:last-of-type {
@@ -1489,6 +1503,10 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 .footer-nav-list {
   padding-top: 38px;
   margin-bottom: 34px;
+}
+
+.footer-nav-item {
+  list-style-type: none;
 }
 
 .footer-nav-item:not(:last-child) {
