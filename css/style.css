@@ -117,7 +117,7 @@ img {
 }
 
 .obertka-s-marginom-catalog {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .user-nav-list,
@@ -159,6 +159,14 @@ img {
 .link-bookmark:hover,
 .link-basket:hover:not(.basket-active) {
   background-color: #212a3b;
+}
+
+.link-bookmark-catalog {
+  padding: 12px 28px;
+}
+
+.link-basket-catalog {
+  padding: 12px 23px;
 }
 
 .user-nav-link.link-search {
@@ -248,6 +256,10 @@ img {
 
 .header-block-contacts {
   text-align: center;
+}
+
+.contacts-catalog {
+  margin-left: 18px;
 }
 
 .header-block-contacts-number {
