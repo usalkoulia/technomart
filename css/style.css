@@ -85,7 +85,7 @@ img {
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #ffffff;
 }
 
@@ -656,6 +656,10 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .products-list {
+  padding-bottom: 1px;
+}
+
+.products-list-catalog {
   padding-bottom: 31px;
 }
 
@@ -1058,6 +1062,12 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-top: -354px;
   z-index: 100;
   box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.button-feedback-map {
+  top: -8px;
+  right: -1px;
 }
 
 .about-company-link {
@@ -1642,7 +1652,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .submit-button-wrapper {
   background-color: #f4f4f4;
-  padding: 37px 80px;
+  padding: 36px 0px 36px 80px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1660,13 +1670,16 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   font-weight: 100;
   color: #ee3643;
   position: absolute;
-  top: -5px;
-  right: 5px;
 }
 
 .submit-button,
 .feedback-modal-button {
   cursor: pointer;
+}
+
+.button-write-us-modal {
+  top: -5px;
+  right: 5px;
 }
 
 .basket-popup {
@@ -1679,30 +1692,34 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   background-color: #ffffff;
   background-image: url(../svg/svg-technomart/form-1.svg);
   background-repeat: no-repeat;
-  background-position: 55px 50px;
-  padding: 70px 120px;
+  background-position: 81px 48px;
+  padding: 68px 100px 0px 180px;
   box-sizing: border-box;
   margin-left: -310px;
   margin-top: -140px;
   z-index: 100;
-  display: none;
+  display: block;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
 .basket-popup h3 {
   text-transform: none;
 }
 
-.button-basket {
-  padding: 11px 40px;
+.button-basket-popup {
+  top: -9px;
+  right: -1px;
 }
 
-.button-basket:not(.button-basket-white) {
-  margin-right: 20px;
+.button-basket-red {
+  padding: 11px 60px;
+  margin-right: 17px;
 }
 
 .button-basket-white {
   background-color: #ffffff;
   color: #000000;
+  padding: 11px 46px;
 }
 
 .button-basket-white:hover,
