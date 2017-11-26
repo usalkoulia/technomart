@@ -101,22 +101,22 @@ img {
   ХЕДЕР
 \*====================================================================================================================*/
 
-.obertka-s-sinim-fonom {
+.background-blue-wrapper {
   width: 100%;
   background-color: #293449;
 }
 
-.obertka-s-serim-fonom {
+.background-gray-wrapper {
   background-color: #f3f7f8;
   padding-bottom: 25px;
 }
 
-.obertka-s-marginom-index {
+.margin-wrapper-index {
   margin-bottom: 60px;
   padding-bottom: 24px;
 }
 
-.obertka-s-marginom-catalog {
+.margin-wrapper-catalog {
   margin-bottom: 18px;
 }
 
@@ -1406,7 +1406,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-bottom: 29px;
 }
 
-.catalog-product-features .obertka-s-serim-fonom {
+.catalog-product-features .background-gray-wrapper {
   padding: 68px 0;
 }
 
