@@ -166,7 +166,7 @@ img {
 }
 
 .link-basket-catalog {
-  padding: 12px 23px;
+  padding: 12px 26px 12px 20px;
 }
 
 .user-nav-link.link-search {
@@ -1086,11 +1086,20 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-bottom: 20px;
 }
 
+.breadcrumbs li {
+  margin-right: 30px;
+  position: relative;
+}
+
 .breadcrumbs li:not(:last-child)::after {
-  content: ">";
-  color: #c1c6ce;
-  margin-left: 15px;
-  margin-right: 15px;
+  content: "";
+  background-image: url("../svg/svg-technomart/icon-right-small.svg");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  left: 26px;
+  top: 4px;
 }
 
 .breadcrumbs a {
