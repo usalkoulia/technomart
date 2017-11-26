@@ -1036,7 +1036,16 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .about-company-map-modal {
-  display: none;
+  display: block;
+  width: 940px;
+  height: 446px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -470px;
+  margin-top: -354px;
+  z-index: 100;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
 .about-company-link {
@@ -1542,6 +1551,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-left: -312px;
   margin-top: -213px;
   z-index: 100;
+  box-shadow: 0 10px 30px 15px rgba(0, 0, 0, 0.3);
+  display: none;
 }
 
 .write-us-form {
@@ -1568,12 +1579,11 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   border: 2px solid #dee3e4;
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 10px;
 }
 
 .input-narrow {
   width: 220px;
-  height: 32px
 }
 
 .input-wide {
