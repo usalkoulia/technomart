@@ -924,9 +924,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .services-slider-block {
   background-repeat: no-repeat;
-  background-position: 151px 19px;
-  width: 620px;
-  height: 263px;
+  height: 261px;
 }
 
 .services-slider-block h2 {
@@ -935,10 +933,17 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .services-slider-block.slide-1 {
   background-image: url("../img/services-pic-1.png");
+  background-position: 151px 19px;
+  width: 620px;
 }
 
 .services-slider-block.slide-2 {
   background-image: url("../img/services-pic-2.png");
+  background-position: 239px 0px;
+  width: 630px;
+  margin-right: -10px;
+  margin-top: -2px;
+  padding-top: 2px;
 }
 
 .services-slider-block.slide-3 {
@@ -951,7 +956,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .services-slider-block.slide-2 p,
 .services-slider-block.slide-3 p {
-  width: 380px;
+  width: 379px;
 }
 
 .services-slider-block.slide-3 p {
