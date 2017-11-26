@@ -734,7 +734,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   top: 0px;
   bottom: 140px;
   right: -20px;
-  padding-top: 40px;
+  padding-top: 43px;
   box-sizing: border-box;
   display: none;
 }
@@ -745,10 +745,10 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .background-button {
   font-size: 14px;
-  padding: 5px;
+  /*padding: 5px;*/
   box-sizing: border-box;
   width: 135px;
-  height: 40px;
+  height: 36px;
   border-radius: 5px;
   text-transform: uppercase;
   font-family: "Cuprum", sans-serif;
@@ -756,13 +756,13 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .button-buy {
-  margin-bottom: 8px;
+  margin-bottom: 11px;
   background-color: #63a63e;
   color: #ffffff;
   border: none;
   box-shadow: 0 3px 0 0 #367315;
   position: relative;
-  line-height: 33px;
+  line-height: 39px;
 }
 
 .button-buy:hover {
@@ -1083,11 +1083,11 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .breadcrumbs li {
-  margin-right: 30px;
+  margin-right: 40px;
   position: relative;
 }
 
@@ -1098,8 +1098,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   width: 8px;
   height: 12px;
   position: absolute;
-  left: 26px;
   top: 4px;
+  right: -24px;
 }
 
 .breadcrumbs a {
@@ -1115,8 +1115,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .title-wrapper {
   background-color: #f2f6f8;
-  padding: 30px;
-  margin-bottom: 20px;
+  padding: 32px 28px;
+  margin-bottom: 19px;
 }
 
 .catalog-wrapper {
@@ -1130,7 +1130,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .catalog-filters p {
   background-color: #f7f3ec;
-  padding: 9px 19px;
+  padding: 8px 19px;
   margin-bottom: 12px;
 }
 
@@ -1215,7 +1215,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   position: absolute;
   font-size: 15px;
   color: #000000;
-  top: 5px;
+  top: 8px;
   left: 105px;
 }
 
@@ -1229,7 +1229,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   position: relative;
   margin-bottom: 25px;
   font-size: 17px;
-  font-family: font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .svg-checkbox {
@@ -1312,8 +1312,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   display: flex;
   justify-content: space-between;
   background-color: #f7f3ec;
-  padding: 10px 20px;
-  margin-bottom: 20px;
+  padding: 8px 20px;
+  margin-bottom: 18px;
   box-sizing: border-box;
 }
 
@@ -1321,13 +1321,20 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   text-transform: uppercase;
   width: 360px;
   display: flex;
-  justify-content: space-between;
-  margin-left: 110px;
+  margin-left: 98px;
 }
 
 .sorting-type-links a {
   border-bottom: 1px dotted #ee3643;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.sorting-type-links a:first-of-type {
+  margin-right: 70px;
+}
+
+.sorting-type-links a:nth-of-type(2) {
+  margin-right: 65px;
 }
 
 .sorting-type-links a:hover {
@@ -1342,11 +1349,21 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   pointer-events: none;
 }
 
+.sorting-priority-buttons {
+  width: 41px;
+  display: flex;
+}
+
 .sorting-priority-button {
   background: transparent;
   border: none;
   color: #c5c5c5;
   cursor: pointer;
+  padding: 0;
+}
+
+.sorting-priority-button:first-of-type {
+  margin-right: 19px;
 }
 
 .sorting-priority-button.active-button {
