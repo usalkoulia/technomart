@@ -150,10 +150,12 @@ img {
 
 .link-bookmark {
   padding: 12px 19px;
+  white-space: nowrap;
 }
 
 .link-basket {
   padding: 12px 30px;
+  white-space: nowrap;
 }
 
 .link-bookmark:hover,
@@ -163,10 +165,12 @@ img {
 
 .link-bookmark-catalog {
   padding: 12px 28px;
+  white-space: nowrap;
 }
 
 .link-basket-catalog {
   padding: 12px 26px 12px 20px;
+  white-space: nowrap;
 }
 
 .user-nav-link.link-search {
@@ -226,6 +230,7 @@ img {
 .link-order {
   background-color: #63a63e;
   padding: 12px 21px;
+  white-space: nowrap;
 }
 
 .link-order:hover {
@@ -915,7 +920,6 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 
 .about-services-slider {
   padding-top: 5px;
-  /*padding-left: 80px;*/
 }
 
 .services-slider-block {
@@ -955,8 +959,8 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-bottom: 20px;
 }
 
-.services-slider-block.slide-3,
-.services-slider-block.slide-2 {
+.services-slider-block.slide-1,
+.services-slider-block.slide-3 {
   display: none;
 }
 
@@ -1062,12 +1066,12 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   margin-top: -354px;
   z-index: 100;
   box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
-  display: block;
+  display: none;
 }
 
 .button-feedback-map {
   top: -8px;
-  right: -1px;
+  right: -2px;
 }
 
 .about-company-link {
@@ -1149,6 +1153,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   display: flex;
   padding: 0;
   margin: 0;
+  flex-direction: column;
 }
 
 .catalog-filters fieldset legend {
@@ -1299,7 +1304,7 @@ input:focus:-ms-input-placeholder      {color:#000000;}
 }
 
 .filters-label:last-child {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .label-radio {
@@ -1315,10 +1320,10 @@ input:focus:-ms-input-placeholder      {color:#000000;}
   text-transform: uppercase;
   background: transparent;
   border: 1px solid #e5e5e5;
-  padding: 12px 31px 10px 37px;
+  padding: 12px 33px 10px 37px;
   box-sizing: border-box;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 53px;
 }
 
 .catalog-products {
