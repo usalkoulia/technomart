@@ -648,7 +648,7 @@ input:focus:-ms-input-placeholder {
 
 .item-materials {
   background-color: #ffbf47;
-  background-image: url("../svg/svg-technomart/icon-1.svg");
+  background-image: url("../svg/icon-1.svg");
   background-repeat: no-repeat;
   background-size: 65px 65px;
   background-position: 202px 31px;
@@ -656,7 +656,7 @@ input:focus:-ms-input-placeholder {
 
 .item-instruments {
   background-color: #3bbce3;
-  background-image: url("../svg/svg-technomart/icon-2.svg");
+  background-image: url("../svg/icon-2.svg");
   background-repeat: no-repeat;
   background-size: 73px 65px;
   background-position: 198px 31px;
@@ -664,7 +664,7 @@ input:focus:-ms-input-placeholder {
 }
 .item-technique {
   background-color: #dc91d8;
-  background-image: url("../svg/svg-technomart/icon-3.svg");
+  background-image: url("../svg/icon-3.svg");
   background-repeat: no-repeat;
   background-size: 76px 66px;
   background-position: 192px 29px;
@@ -672,7 +672,7 @@ input:focus:-ms-input-placeholder {
 
 .item-sale {
   background-color: #8ed78f;
-  background-image: url("../svg/svg-technomart/icon-4.svg");
+  background-image: url("../svg/icon-4.svg");
   background-repeat: no-repeat;
   background-size: 74px 71px;
   background-position: 189px 27px;
@@ -680,7 +680,7 @@ input:focus:-ms-input-placeholder {
 
 .item-delivery {
   background-color: #ffc047;
-  background-image: url("../svg/svg-technomart/icon-5.svg");
+  background-image: url("../svg/icon-5.svg");
   background-repeat: no-repeat;
   background-size: 77px 69px;
   background-position: 192px 29px;
@@ -817,7 +817,7 @@ input:focus:-ms-input-placeholder {
   background-color: #f9f5f0;
 }
 
-.popular-producers-wrapper h3 {
+.popular-producers-wrapper .heading-3 {
   max-width: 600px;
 }
 
@@ -853,7 +853,7 @@ input:focus:-ms-input-placeholder {
           box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.3);
 }
 
-.products-item h4 {
+.products-item .heading-4 {
   text-transform: none;
 }
 
@@ -884,7 +884,7 @@ input:focus:-ms-input-placeholder {
 
   color: #ffffff;
 
-  background-image: url("../svg/svg-technomart/red-button.svg");
+  background-image: url("../svg/red-button.svg");
   background-repeat: no-repeat;
 }
 
@@ -1049,7 +1049,7 @@ input:focus:-ms-input-placeholder {
   padding-top: 68px;
 }
 
-.about-services-container h3 {
+.about-services-container .heading-3 {
   margin-bottom: 29px;
 }
 
@@ -1115,7 +1115,7 @@ input:focus:-ms-input-placeholder {
   background-repeat: no-repeat;
 }
 
-.services-slider-block h2 {
+.services-slider-block .heading-2 {
   margin-bottom: 31px;
 }
 
@@ -1189,8 +1189,8 @@ input:focus:-ms-input-placeholder {
   width: 450px;
 }
 
-.about-company-delivery h3,
-.about-company-contacts h3 {
+.about-company-delivery .heading-3,
+.about-company-contacts .heading-3 {
   margin-bottom: 29px;
 }
 
@@ -1326,7 +1326,7 @@ input:focus:-ms-input-placeholder {
   width: 8px;
   height: 12px;
 
-  background-image: url("../svg/svg-technomart/icon-right-small.svg");
+  background-image: url("../svg/icon-right-small.svg");
   background-repeat: no-repeat;
 }
 
@@ -1498,7 +1498,7 @@ input:focus:-ms-input-placeholder {
 
   vertical-align: middle;
 
-  background-image: url("../svg/svg-technomart/checkbox-off.svg");
+  background-image: url("../svg/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.7;
 }
@@ -1511,7 +1511,7 @@ input:focus:-ms-input-placeholder {
 
   vertical-align: middle;
 
-  background-image: url("../svg/svg-technomart/radio-off.svg");
+  background-image: url("../svg/radio-off.svg");
   background-repeat: no-repeat;
 }
 
@@ -1531,7 +1531,7 @@ input:focus:-ms-input-placeholder {
   width: 27px;
   height: 23px;
 
-  background-image: url("../svg/svg-technomart/checkbox-on.svg");
+  background-image: url("../svg/checkbox-on.svg");
   opacity: 0.7;
 }
 
@@ -1539,7 +1539,7 @@ input:focus:-ms-input-placeholder {
   width: 25px;
   height: 25px;
 
-  background-image: url("../svg/svg-technomart/radio-on.svg");
+  background-image: url("../svg/radio-on.svg");
   opacity: 0.7;
 }
 
@@ -1671,7 +1671,7 @@ input:focus:-ms-input-placeholder {
   pointer-events: none;
 }
 
-.catalog-product-features h3 {
+.catalog-product-features .heading-3 {
   margin-bottom: 29px;
 }
 
@@ -2033,7 +2033,7 @@ input:focus:-ms-input-placeholder {
   padding: 68px 100px 0 180px;
 
   background-color: #ffffff;
-  background-image: url(../svg/svg-technomart/form-1.svg);
+  background-image: url("../svg/form-1.svg");
   background-repeat: no-repeat;
   background-position: 81px 48px;
   border-top: 7px solid #ff5257;
@@ -2041,7 +2041,7 @@ input:focus:-ms-input-placeholder {
           box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
-.basket-popup h3 {
+.basket-popup .heading-3 {
   text-transform: none;
 }
 
