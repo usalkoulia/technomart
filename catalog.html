@@ -41,7 +41,7 @@
             <div class="header-block-promo">
               <p>Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             </div>
-            <div class="header-block-contacts contacts-catalog">
+            <div class="header-block-contacts contacts-catalog" aria-label="Контактный номер телефона и адрес магазина">
               <p class="header-block-contacts-number">
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/></svg>
                 +7 (812) 555-05-55</p>
@@ -49,11 +49,11 @@
             </div>
             <div class="user-account">
               <div class="user-name">
-                <a href="#">
+                <a href="#" aria-label="Ссылка на профайл пользователя">
                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
                   Равшан Джамшутович
                 </a>
-                <a href="#" class="user-account-link">
+                <a href="#" class="user-account-link" aria-label="Кнопка деавторизации">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
               </a>
               </div>
@@ -109,8 +109,8 @@
                   </div>
                 </div>
                 <div class="catalog-filters-price">
-                  <input type="text" name="price-from" class="filters-price price-from" value="0">
-                  <input type="text" name="price-to" class="filters-price" value="30000">
+                  <input type="text" name="price-from" class="filters-price price-from" value="0" aria-label="Цена от">
+                  <input type="text" name="price-to" class="filters-price" value="30000" aria-label="Цена до">
                 </div>
               </fieldset>
               <div class="fieldset-producers-wrapper">
@@ -167,8 +167,8 @@
                   <a href="#">По функционалу</a>
                 </div>
                 <div class="sorting-priority-buttons">
-                  <button type="button" name="button" class="sorting-priority-button active-button">▲</button>
-                  <button type="button" name="button" class="sorting-priority-button">▼</button>
+                  <button type="button" name="button" class="sorting-priority-button active-button" aria-label="Сортировать товары по возрастанию">▲</button>
+                  <button type="button" name="button" class="sorting-priority-button" aria-label="Сортировать товары по убыванию">▼</button>
                 </div>
               </div>
               <ul class="products-list products-list-catalog">
@@ -181,10 +181,10 @@
                   </div>
                   <span class="products-new"></span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -197,10 +197,10 @@
                   </div>
                   <span class="products-new"></span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -213,10 +213,10 @@
                   </div>
                   <span class="products-new products-new-active">new</span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -229,10 +229,10 @@
                   </div>
                   <span class="products-new"></span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -245,10 +245,10 @@
                   </div>
                   <span class="products-new products-new-active">new</span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -261,10 +261,10 @@
                   </div>
                   <span class="products-new"></span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -277,10 +277,10 @@
                   </div>
                   <span class="products-new products-new-active">new</span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -293,10 +293,10 @@
                   </div>
                   <span class="products-new"></span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>
@@ -309,10 +309,10 @@
                   </div>
                   <span class="products-new"></span>
                   <div class="products-item-background">
-                    <button type="button" name="button" class="background-button button-buy">
+                    <a class="background-button button-buy">
                       <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
                       Купить
-                    </button>
+                    </a>
                     <button type="button" name="button" class="background-button button-bookmark">В закладки</button>
                   </div>
                 </li>

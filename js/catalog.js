@@ -2,7 +2,8 @@ var button_buy = document.querySelector(".button-buy");
 var basket_popup = document.querySelector(".basket-popup");
 var feedback_button_basket_popup = document.querySelector(".feedback-button-basket-popup");
 
-button_buy.addEventListener("click", function() {
+button_buy.addEventListener("click", function(evt) {
+  evt.preventDefault();
   basket_popup.classList.add("basket-popup-show");
 });
 

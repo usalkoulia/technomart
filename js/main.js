@@ -84,7 +84,8 @@ services_item_3.addEventListener("click", function() {
   services_slide_2.classList.remove("active-slide");
 });
 
-contacts_link.addEventListener("click", function() {
+contacts_link.addEventListener("click", function(evt) {
+  evt.preventDefault();
   write_us_modal.classList.add("write-us-modal-show");
 });
 
@@ -101,7 +102,8 @@ write_us_form.addEventListener("submit", function(evt) {
   }
 });
 
-map_link.addEventListener("click", function() {
+map_link.addEventListener("click", function(evt) {
+  evt.preventDefault();
   map_modal.classList.add("map-modal-show");
 });
 
@@ -109,7 +111,8 @@ feedback_button_map.addEventListener("click", function() {
   map_modal.classList.remove("map-modal-show");
 });
 
-button_buy.addEventListener("click", function() {
+button_buy.addEventListener("click", function(evt) {
+  evt.preventDefault();
   basket_popup.classList.add("basket-popup-show");
 });
 
