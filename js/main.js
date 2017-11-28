@@ -13,6 +13,11 @@ var services_slide_3 = document.querySelector(".services-slide-3");
 var contacts_link = document.querySelector(".contacts-link");
 var write_us_modal = document.querySelector(".write-us-modal");
 var feedback_button = document.querySelector(".button-write-us-modal");
+var write_us_form = document.querySelector(".write-us-form");
+var write_us_input_1 = document.querySelector("#write-us-name");
+var write_us_input_2 = document.querySelector("#write-us-email");
+var write_us_input_3 = document.querySelector("#write-us-text");
+
 var map_link = document.querySelector(".map-wrapper");
 var map_modal = document.querySelector(".about-company-map-modal");
 var feedback_button_map = document.querySelector(".button-feedback-map");
@@ -83,6 +88,15 @@ contacts_link.addEventListener("click", function() {
 feedback_button.addEventListener("click", function() {
   write_us_modal.classList.remove("write-us-modal-show");
 });
+
+write_us_form.addEventListener("submit", function(evt) {
+  if (!write_us_input_1.value || !write_us_input_2.value || !write_us_input_3.value ) {
+    evt.preventDefault();
+    write_us_form.classList.add("write-us-modal-error");
+  }
+});
+
+
 
 map_link.addEventListener("click", function() {
   map_modal.classList.add("map-modal-show");
