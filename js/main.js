@@ -12,7 +12,9 @@ var services_slide_2 = document.querySelector(".services-slide-2");
 var services_slide_3 = document.querySelector(".services-slide-3");
 var contacts_link = document.querySelector(".contacts-link");
 var write_us_modal = document.querySelector(".write-us-modal");
-var feedback_button = document.querySelector(".feedback-modal-button");
+var feedback_button = document.querySelector(".button-write-us-modal");
+var map_link = document.querySelector(".map-wrapper");
+var map_modal = document.querySelector(".about-company-map-modal");
 
 
 slide_button_circle_left.addEventListener("click", function() {
@@ -76,4 +78,8 @@ contacts_link.addEventListener("click", function() {
 
 feedback_button.addEventListener("click", function() {
   write_us_modal.classList.remove("write-us-modal-show");
+});
+
+map_link.addEventListener("click", function() {
+  map_modal.classList.add(".map-modal-show");
 });

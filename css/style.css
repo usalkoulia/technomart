@@ -1275,6 +1275,16 @@ input:focus:-ms-input-placeholder {
           box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
+.map-modal-show {
+  display: block;
+}
+
+.map-wrapper {
+  opacity: 0.7;
+  width: 300px;
+  height: 158px;
+}
+
 .button-feedback-map {
   top: -8px;
   right: -2px;
