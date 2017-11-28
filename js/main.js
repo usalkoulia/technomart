@@ -4,6 +4,7 @@ var features_slide_1 = document.querySelector(".features-slide-1");
 var features_slide_2 = document.querySelector(".features-slide-2");
 var slide_button_arrow_left = document.querySelector(".button-arrow-left");
 var slide_button_arrow_right= document.querySelector(".button-arrow-right");
+
 var services_item_1 = document.querySelector("#services-item-1");
 var services_item_2 = document.querySelector("#services-item-2");
 var services_item_3 = document.querySelector("#services-item-3");
@@ -11,6 +12,7 @@ var services_slide_1 = document.querySelector(".services-slide-1");
 var services_slide_2 = document.querySelector(".services-slide-2");
 var services_slide_3 = document.querySelector(".services-slide-3");
 var contacts_link = document.querySelector(".contacts-link");
+
 var write_us_modal = document.querySelector(".write-us-modal");
 var feedback_button = document.querySelector(".button-write-us-modal");
 var write_us_form = document.querySelector(".write-us-form");
@@ -21,6 +23,7 @@ var write_us_input_3 = document.querySelector("#write-us-text");
 var map_link = document.querySelector(".map-wrapper");
 var map_modal = document.querySelector(".about-company-map-modal");
 var feedback_button_map = document.querySelector(".button-feedback-map");
+
 var button_buy = document.querySelector(".button-buy");
 var basket_popup = document.querySelector(".basket-popup");
 var feedback_button_basket_popup = document.querySelector(".feedback-button-basket-popup");
@@ -92,11 +95,11 @@ feedback_button.addEventListener("click", function() {
 write_us_form.addEventListener("submit", function(evt) {
   if (!write_us_input_1.value || !write_us_input_2.value || !write_us_input_3.value ) {
     evt.preventDefault();
-    write_us_form.classList.add("write-us-modal-error");
+    write_us_modal.classList.remove("write-us-modal-error");
+    write_us_modal.offsetWidth = write_us_modal.offsetWidth;
+    write_us_modal.classList.add("write-us-modal-error");
   }
 });
-
-
 
 map_link.addEventListener("click", function() {
   map_modal.classList.add("map-modal-show");
