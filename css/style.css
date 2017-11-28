@@ -712,13 +712,18 @@ input:focus:-ms-input-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.features-slider-slide.slide-1 {
+.features-slide-1 {
   background-image: url("../img/slider-1-slide-1.jpg");
+  display: none;
 }
 
-.features-slider-slide.slide-2 {
+.features-slide-2 {
   background-image: url("../img/slider-1-slide-2.jpg");
   display: none;
+}
+
+.active-slide {
+  display: block;
 }
 
 .features-slider-link {
