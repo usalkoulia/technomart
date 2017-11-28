@@ -15,6 +15,10 @@ var write_us_modal = document.querySelector(".write-us-modal");
 var feedback_button = document.querySelector(".button-write-us-modal");
 var map_link = document.querySelector(".map-wrapper");
 var map_modal = document.querySelector(".about-company-map-modal");
+var feedback_button_map = document.querySelector(".button-feedback-map");
+var button_buy = document.querySelector(".button-buy");
+var basket_popup = document.querySelector(".basket-popup");
+var feedback_button_basket_popup = document.querySelector(".feedback-button-basket-popup");
 
 
 slide_button_circle_left.addEventListener("click", function() {
@@ -81,5 +85,17 @@ feedback_button.addEventListener("click", function() {
 });
 
 map_link.addEventListener("click", function() {
-  map_modal.classList.add(".map-modal-show");
+  map_modal.classList.add("map-modal-show");
+});
+
+feedback_button_map.addEventListener("click", function() {
+  map_modal.classList.remove("map-modal-show");
+});
+
+button_buy.addEventListener("click", function() {
+  basket_popup.classList.add("basket-popup-show");
+});
+
+feedback_button_basket_popup.addEventListener("click", function() {
+  basket_popup.classList.remove("basket-popup-show");
 });
