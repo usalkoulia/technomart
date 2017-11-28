@@ -722,10 +722,6 @@ input:focus:-ms-input-placeholder {
   display: none;
 }
 
-.active-slide {
-  display: block;
-}
-
 .features-slider-link {
   position: absolute;
   left: 25px;
@@ -1167,6 +1163,7 @@ input:focus:-ms-input-placeholder {
   background-color: #ff5357;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /*====================================================================================================================*\
@@ -1937,6 +1934,116 @@ input:focus:-ms-input-placeholder {
           box-shadow: 0 10px 30px 15px rgba(0, 0, 0, 0.3);
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+.write-us-modal-show {
+  display: block;
+
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+.write-us-modal-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
 .write-us-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2069,6 +2176,10 @@ input:focus:-ms-input-placeholder {
 .button-basket-white:hover,
 .button-basket-white:active {
   background-color: #ffffff;
+}
+
+.active-slide {
+  display: block;
 }
 
 .write-us-modal input::-webkit-input-placeholder {
