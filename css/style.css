@@ -635,7 +635,7 @@ input:focus:-ms-input-placeholder {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .features-item-link:hover {
@@ -918,7 +918,7 @@ input:focus:-ms-input-placeholder {
   font-family: "Cuprum", sans-serif;
   text-transform: uppercase;
 
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -1085,8 +1085,13 @@ input:focus:-ms-input-placeholder {
   font-size: 21px;
   font-family: "Cuprum", sans-serif;
   color: #ffffff;
+  box-sizing: border-box;
+  height: 62px;
 
   background-color: #32425c;
+}
+
+.services-item:not(:last-of-type) {
   border-bottom: 1px solid #4d627b;
 }
 
@@ -1164,6 +1169,14 @@ input:focus:-ms-input-placeholder {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.services-slider-button:hover {
+  background-color: #ca2c37;
+}
+
+.services-slider-button:active {
+  background-color: #ba2732;
 }
 
 /*====================================================================================================================*\
@@ -1719,8 +1732,16 @@ input:focus:-ms-input-placeholder {
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.catalog-pagination li:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.catalog-pagination li:active {
+  border: 1px solid #ee3643;
 }
 
 .catalog-pagination li:last-of-type {
@@ -2093,7 +2114,7 @@ input:focus:-ms-input-placeholder {
   padding: 10px 10px;
 
   border: 2px solid #dee3e4;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .input-narrow {
