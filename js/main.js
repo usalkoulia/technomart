@@ -8,10 +8,10 @@ slide_button_arrow_left.addEventListener("click", function() {
   slide_button_arrow_left.classList.add("arrow-active");
   slide_1.classList.add(".active-slide");
   slide_2.classList.remove(".active-slide");
-}
+});
 
 slide_button_arrow_right.addEventListener("click", function() {
   slide_button_arrow_right.classList.add("arrow-active");
   slide_2.classList.add(".active-slide");
   slide_1.classList.remove(".active-slide");
-}
+});
