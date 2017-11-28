@@ -1089,6 +1089,7 @@ input:focus:-ms-input-placeholder {
   height: 62px;
 
   background-color: #32425c;
+  list-style-type: none;
 }
 
 .services-item:not(:last-of-type) {
