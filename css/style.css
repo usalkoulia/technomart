@@ -1521,14 +1521,10 @@ input:focus:-ms-input-placeholder {
   -ms-flex-pack: justify;
 }
 
-.catalog-filters-price::after {
-  content: "—";
-  position: absolute;
-  top: 8px;
-  left: 105px;
-
+.catalog-filters-price span {
   font-size: 15px;
   color: #000000;
+  line-height: 39px;
 }
 
 .filters-price {
@@ -1650,9 +1646,8 @@ input:focus:-ms-input-placeholder {
   align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 38px;
   margin-bottom: 20px;
-  padding: 0 20px;
+  padding: 7 20px;
 
   background-color: #f7f3ec;
 
